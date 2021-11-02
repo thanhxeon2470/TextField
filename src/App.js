@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import TextField from "./components/TextField"
+import { useState } from "react";
 import './App.css';
-
+// var element = "babcbbc";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  // var element = document.getElementById("i1");
+  const [value, setValue] = useState("");
+  const handleChange = (event) => { setValue(event.target.value) }
+    return (
+    <div>
+      <TextField
+        label="Input label text"
+        placeholder="This input is quite long"
+        // hintText="Informative message holder"
+        onChange={handleChange} 
+        />
     </div>
+
   );
 }
 
