@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 div.content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* position: relative; */
   width: 300px;
+  height: 200px;
+  margin: 100px;
+  padding: 10px;
+}
+
+div.main {
+  display: flex;
+  background-color: #1E2A3A;
+  width:auto;
+  height:auto;
+  /* border: 5px solid red; */
 }
 
 
