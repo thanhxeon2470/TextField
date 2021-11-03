@@ -2,76 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.inp::placeholder {
-  /* Placeholder text */
-
-
-  position: static;
-  width: 256px;
-  left: 16px;
-  top: 19.44%;
-  bottom: 19.44%;
-
-  /* Paragraph/Regular 14 */
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-  /* or 22px */
-
-  display: flex;
-  align-items: center;
-
-  /* Text Color/200 */
-
-  color: #757A83;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 9px 0px;
-}
-
-.inpErr::placeholder {
-  /* Placeholder text */
-
-
-  position: static;
-  width: 256px;
-  left: 16px;
-  top: 22.5%;
-  bottom: 22.5%;
-
-  /* Paragraph/Regular 14 */
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-  /* or 22px */
-
-  display: flex;
-  align-items: center;
-
-  /* Text Color/400 */
-
-  color: #E8E9EA;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 10px 0px;
+div.content {
+  width: 300px;
 }
 
 
