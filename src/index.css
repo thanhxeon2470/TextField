@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.inp {
-  /* Auto Layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 7px 16px;
-
-  position: static;
-  left: 0%;
-  right: 0%;
-  top: 45.45%;
-  bottom: 0%;
-
-  /* Divider */
-
-  border: 1px solid #344356;
-  box-sizing: border-box;
-  border-radius: 8px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 8px 0px;
-}
-
 .inp::placeholder {
   /* Placeholder text */
 
@@ -65,45 +36,6 @@
   align-self: stretch;
   flex-grow: 0;
   margin: 9px 0px;
-}
-
-.inp:hover {
-  border: 1px solid #5E718A;
-}
-
-.inp:active {
-  /* Text Color/300 */
-  border: 1px solid #919DAF;
-}
-
-.inpErr {
-  /* Input Container */
-
-  /* Auto Layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 9px 16px;
-
-  position: static;
-  left: 0%;
-  right: 0%;
-  top: 31.25%;
-  bottom: 27.08%;
-
-  /* Background/100 */
-  background: #1E2A3A;
-  /* Support Color /Error */
-
-  border: 1px solid #F44336;
-  box-sizing: border-box;
-  border-radius: 8px;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
 }
 
 .inpErr::placeholder {
@@ -142,101 +74,6 @@
   margin: 10px 0px;
 }
 
-.labelStyle {
-  /* Input title */
-
-
-  position: static;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 66.67%;
-
-  /* Paragraph/Medium 14 */
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
-  /* or 22px */
-
-  display: flex;
-  align-items: center;
-
-  /* Text Color/300 */
-
-  color: #919DAF;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 8px 0px;
-}
-
-.hintTextFrame {
-  /* Hint text */
-
-
-  /* Auto Layout */
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px 12px;
-
-  position: static;
-  width: 288px;
-  left: calc(50% - 288px/2);
-  top: 81.25%;
-  bottom: 0%;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 8px 0px;
-}
-
-.hintText {
-  /* input/ atom / error txt */
-
-
-  position: static;
-  width: 264px;
-  left: 12px;
-  top: 0%;
-  bottom: 0%;
-
-  /* Paragraph/Medium 12 */
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 150%;
-  /* identical to box height, or 18px */
-
-
-  /* Support Color /Error */
-
-  color: #F44336;
-
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 0px;
-}
 
 body {
   margin: 0;

@@ -1,22 +1,32 @@
+import React, { Component } from 'react';
 import TextField from "./components/TextField"
-import { useState } from "react";
 import './App.css';
 // var element = "babcbbc";
-function App() {
-  // var element = document.getElementById("i1");
-  const [value, setValue] = useState("");
-  const handleChange = (event) => { setValue(event.target.value) }
-    return (
-    <div>
-      <TextField
-        label="Input label text"
-        placeholder="This input is quite long"
-        // hintText="Informative message holder"
-        onChange={handleChange} 
-        />
-    </div>
+class App extends Component {
+  constructor(props) {
+      super(props);
 
-  );
+      this.state = {
+          value: '',
+      };
+  }
+  handleChange = (event) => {
+    this.setState ({value: event.target.value} )
+  }
+  render() {
+    return (
+      <div>
+        <TextField className="layout"
+          label="Input label text"
+          placeholder="This input is quite long"
+          hintText="Informative message holder"
+          onChange={this.handleChange} 
+          />
+        <p>{this.state.value}</p>
+      </div>
+
+    );
+  }
 }
 
 export default App;
